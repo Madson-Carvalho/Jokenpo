@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 60px;
+}
+
+.form input {
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.form label {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.form button {
+    border: none;
+    width: 50%;
+    color: black;
+    font-size: 2rem;
+    margin-top: 1rem;
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: rgb(88, 228, 186);
+}
+
+.human {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.human h2 {
+    margin-bottom: 1rem;
+}
+
+.human p {
+    margin-bottom: 0.2rem;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.computer h2 {
+    margin-bottom: 1rem;
+}
+
+.computer p {
+    margin-bottom: 0.2rem;
+}
+
+.computer-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 60px;
+    font-size: 2rem;
+}
+
+.text-space {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.popup-content button {
+    border: none;
+    width: 50%;
+    color: white;
+    font-size: 2rem;
+    margin: 1.5rem 0 1.5rem 0;
+    border-radius: 32px;
+    background-color: darkcyan;
+    cursor: pointer;
+    height: 5rem;
+}
+
+.popup-wrapper {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: darkcyan;
+    font-size: 2rem;
+}
+
+.popup {
+    text-align: center;
+    width: 100%;
+    max-width: 50%;
+    margin: 10% auto;
+    padding: 10px;
+    background: rgb(221, 220, 220);
+    position: relative;
+    border-radius: 100px;
+}
+
+.popup-content img {
+    width: 25%;
+}
+
+.popup-content h2 {
+    padding: 0 1rem 1rem 1rem;
+    margin-top: -1.5rem;
+}

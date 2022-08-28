@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Pedra-Papel-Tesoura</title>
+</head>
+
+<body>
+    <h1>Pedra Papel Tesoura</h1>
+    <div class="text-space"></div>
+    <div class="content">
+        <div class="computer">
+            <h2>Computador</h2>
+            <p>Placar</p>
+            <div class="computer-score">0</div>
+            <div class="computer-play"></div>
+        </div>
+        <div class="human">
+            <h2>Jogador</h2>
+            <p>Placar</p>
+            <div class="human-score">0</div>
+            <form class="form">
+                <label for="input">Escolha pedra, papel ou tesoura</label>
+                <input type="text" class="input" autofocus>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-wrapper" id="win">
+        <div class="popup">
+            <div class="popup-content">
+                <img src="config/img/EMOJI.png" >
+                <h2><strong>Boa, você mostrou ao computador quem manda!</strong></h2>
+                <button>JOGAR NOVAMENTE</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrapper" id="lose">
+        <div class="popup">
+            <div class="popup-content">
+                <img src="config/img/EMOJI 2.png" >
+                <h2><strong>Você foi derrotado pelo computador!</strong></h2>
+                <button onclick="window.location.reload()">JOGAR NOVAMENTE</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
